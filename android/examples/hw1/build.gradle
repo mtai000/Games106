@@ -50,11 +50,16 @@ task copyTask {
     }
 
     copy {
-       from rootProject.ext.shaderPath + 'glsl/triangle'
-       into 'assets/shaders/glsl/triangle'
-       include '*.*'
+        from rootProject.ext.shaderPath + 'glsl/hw1'
+        into 'assets/shaders/glsl/hw1'
+        include '*.*'
     }
 
+    copy {
+        from rootProject.ext.assetPath + 'buster_drone'
+        into 'assets/buster_drone'
+        include '*.*'
+    }
 
 }
 
